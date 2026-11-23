@@ -1,0 +1,34 @@
+SECURITY RECOMMENDATIONS
+
+Target: 192.168.56.102
+Environment: Metasploitable 2
+
+1. LEGACY REMOTE ACCESS
+- Disable unnecessary Telnet, rexec, rlogin and rsh services.
+- Use SSH for secure remote administration.
+
+2. FTP SERVICE
+- Replace traditional FTP with SFTP or another secure transfer method.
+- Use encrypted communication.
+
+3. WEB SERVER
+- Upgrade outdated Apache software to a supported version.
+- Apply security updates regularly.
+- Review web server configuration.
+
+4. DATABASE SERVICES
+- Restrict MySQL and PostgreSQL access to authorized systems.
+- Use strong authentication.
+- Apply database security updates.
+- Review user permissions.
+
+5. GENERAL SECURITY
+- Disable unnecessary services.
+- Apply regular security patches.
+- Configure firewall rules.
+- Monitor system logs.
+- Perform periodic security assessments.
+
+NOTE:
+These recommendations are based on observed services.
+Configuration-level weaknesses have not been independently verified.

@@ -1,0 +1,12 @@
+# Nmap 7.99 scan initiated Mon Nov 23 11:03:04 2026 as: /usr/lib/nmap/nmap --privileged -sV -p 80,3306,5432 -oN /home/kali/Ethical-Hacking-Project/scans/web-database-services.txt 192.168.56.102
+Nmap scan report for 192.168.56.102
+Host is up (0.0022s latency).
+
+PORT     STATE SERVICE    VERSION
+80/tcp   open  http       Apache httpd 2.2.8 ((Ubuntu) DAV/2)
+3306/tcp open  mysql      MySQL 5.0.51a-3ubuntu5
+5432/tcp open  postgresql PostgreSQL DB 8.3.0 - 8.3.7
+MAC Address: 08:00:27:8F:16:1D (Oracle VirtualBox virtual NIC)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 23 11:03:14 2026 -- 1 IP address (1 host up) scanned in 9.90 seconds

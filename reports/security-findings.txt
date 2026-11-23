@@ -1,0 +1,95 @@
+SECURITY FINDINGS - DAY 4
+
+Target: 192.168.56.102
+
+Environment: Metasploitable 2
+
+FINDING 1: LEGACY REMOTE ACCESS SERVICES
+
+Affected Ports:
+23/tcp - Telnet
+512/tcp - rexec
+513/tcp - rlogin
+514/tcp - rsh
+
+Risk:
+These legacy protocols may expose sensitive
+communication because they lack modern
+transport security.
+
+Severity: High (provisional)
+
+Recommendation:
+Disable unnecessary legacy services.
+Use SSH for secure remote administration.
+
+FINDING 2: FTP SERVICE
+
+Port: 21/tcp
+Detected Version: vsftpd 2.3.4
+
+Risk:
+Traditional FTP does not encrypt credentials
+or transferred data.
+
+Additional Note:
+The detected version has historically been
+associated with a serious backdoor issue.
+The installed instance has not been verified
+as vulnerable.
+
+Severity: Medium (provisional)
+
+Recommendation:
+Replace FTP with SFTP or securely configured
+FTPS where appropriate.
+
+ASSESSMENT LIMITATION:
+These findings are based on remote service
+identification. Exploitability has not been
+tested or confirmed.
+
+FINDING 3: LEGACY WEB SERVER
+
+Port: 80/tcp
+Software: Apache httpd 2.2.8 (Ubuntu)
+
+Risk:
+The detected software is outdated and may
+lack security updates available in modern
+supported releases.
+
+Severity: Medium (provisional)
+
+Recommendation:
+Upgrade to a supported Apache release.
+Disable unnecessary modules and review
+web server configuration.
+
+
+FINDING 4: DATABASE NETWORK EXPOSURE
+
+Port 3306: MySQL 5.0.51a
+Port 5432: PostgreSQL 8.3.0 - 8.3.7
+
+Risk:
+Database services are accessible over the
+network. Improper access controls may expose
+sensitive database information.
+
+Severity: Medium (provisional)
+
+Recommendation:
+Restrict database access to authorized hosts.
+Use strong authentication and supported
+database versions.
+Review database permissions and firewall rules.
+
+
+EVIDENCE:
+Nmap service detection results saved in:
+scans/web-database-services.txt
+
+ASSESSMENT LIMITATION:
+Open database ports do not prove that
+unauthorized access is possible.

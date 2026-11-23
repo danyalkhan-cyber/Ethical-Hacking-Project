@@ -1,0 +1,65 @@
+ETHICAL HACKING PROJECT - EVIDENCE INDEX
+
+Target: 192.168.56.102
+Environment: Metasploitable 2
+Assessment Type: Authorized Lab Assessment
+
+--- RECONNAISSANCE ---
+
+1. recon/ping-results.txt
+   Purpose: Target connectivity verification.
+
+2. recon/target-neighbor.txt
+   Purpose: Target MAC address identification.
+
+--- NETWORK SCANNING ---
+
+3. scans/initial-port-scan.txt
+   Purpose: Initial TCP port discovery.
+
+4. scans/legacy-services.txt
+   Purpose: Legacy service identification.
+
+5. scans/web-database-services.txt
+   Purpose: Web and database service identification.
+
+--- SCREENSHOT EVIDENCE ---
+
+6. evidence/01-connectivity.png
+   Purpose: Connectivity verification screenshot.
+
+7. evidence/02-port-scan.png
+   Purpose: Initial port scan screenshot.
+
+8. evidence/03-legacy-services.png
+   Purpose: Legacy services screenshot.
+
+9. evidence/04-web-database.png
+   Purpose: Web and database scan screenshot.
+
+--- SECURITY REPORTS ---
+
+10. reports/service-analysis.txt
+    Purpose: Initial service analysis.
+
+11. reports/security-findings.txt
+    Purpose: Potential security weaknesses.
+
+12. reports/risk-assessment.txt
+    Purpose: Preliminary risk prioritization.
+
+13. reports/security-recommendations.txt
+    Purpose: Security improvement recommendations.
+
+14. reports/final-assessment-report.md
+    Purpose: Consolidated security assessment report.
+
+--- ASSESSMENT LIMITATIONS ---
+
+Findings are based on observed network services.
+Configuration weaknesses and exploitability have
+not been independently verified.
+
+No successful exploitation is claimed.
+
+Environment: Authorized isolated VirtualBox lab.

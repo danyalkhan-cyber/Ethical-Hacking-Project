@@ -1,0 +1,15 @@
+# Nmap 7.99 scan initiated Mon Nov 23 10:49:58 2026 as: /usr/lib/nmap/nmap --privileged -sV -p 21,23,512,513,514 -oN /home/kali/Ethical-Hacking-Project/scans/legacy-services.txt 192.168.56.102
+Nmap scan report for 192.168.56.102
+Host is up (0.0014s latency).
+
+PORT    STATE SERVICE VERSION
+21/tcp  open  ftp     vsftpd 2.3.4
+23/tcp  open  telnet  Linux telnetd
+512/tcp open  exec    netkit-rsh rexecd
+513/tcp open  login   OpenBSD or Solaris rlogind
+514/tcp open  shell   Netkit rshd
+MAC Address: 08:00:27:8F:16:1D (Oracle VirtualBox virtual NIC)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Nov 23 10:50:09 2026 -- 1 IP address (1 host up) scanned in 11.61 seconds

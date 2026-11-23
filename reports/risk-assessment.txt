@@ -1,0 +1,29 @@
+RISK ASSESSMENT
+
+Target: 192.168.56.102
+Environment: Metasploitable 2
+
+1. LEGACY REMOTE ACCESS
+Priority: High - Provisional
+Impact: Potential exposure of remote communication.
+Action: Disable unnecessary legacy services.
+
+2. FTP SERVICE
+Priority: Medium - Provisional
+Impact: Potential exposure of credentials and data.
+Action: Replace with secure file transfer.
+
+3. LEGACY APACHE SERVER
+Priority: Medium - Provisional
+Impact: Potential risk from outdated software.
+Action: Upgrade and review configuration.
+
+4. DATABASE EXPOSURE
+Priority: Medium - Provisional
+Impact: Potential unauthorized database access.
+Action: Restrict network access and strengthen authentication.
+
+ASSESSMENT LIMITATION:
+Ratings are preliminary.
+No exploitation or unauthorized access was performed.
+Further configuration review is required.

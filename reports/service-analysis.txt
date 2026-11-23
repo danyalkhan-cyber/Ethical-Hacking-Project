@@ -1,0 +1,30 @@
+INITIAL PORT AND SERVICE ANALYSIS
+
+Target IP: 192.168.56.102
+Operating Environment: Metasploitable 2
+Scanning Tool: Nmap 7.99
+Scan Type: TCP Connect Scan
+Ports Examined: Top 1000 TCP ports
+
+Total Open TCP Ports: 23
+
+Security Observations:
+
+1. Telnet, rexec, rlogin and rsh are legacy
+   remote-access services requiring review.
+
+2. FTP services require authentication and
+   encryption configuration review.
+
+3. Database services require access restrictions.
+
+4. SMB, NFS and RPC require permission reviews.
+
+5. VNC and X11 require access restrictions.
+
+6. HTTP and AJP13 require configuration reviews.
+
+Limitations:
+Port discovery alone does not confirm a
+vulnerability or successful exploitation.
+Further investigation is required.
