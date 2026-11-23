@@ -93,3 +93,60 @@ scans/web-database-services.txt
 ASSESSMENT LIMITATION:
 Open database ports do not prove that
 unauthorized access is possible.
+
+FINDING 5: ADDITIONAL NETWORK SERVICE EXPOSURE
+
+Affected Ports:
+53/tcp - DNS
+111/tcp - RPCBind
+139/tcp - NetBIOS
+445/tcp - SMB
+2049/tcp - NFS
+
+Observation:
+Multiple network infrastructure and file-sharing
+services are exposed on the target system.
+
+Risk:
+Unnecessary exposure may increase the attack
+surface and create additional security risks.
+
+Severity: Medium (Provisional)
+
+Recommendation:
+Restrict access to required hosts.
+Disable unnecessary services.
+Review SMB and NFS permissions and configurations.
+
+
+FINDING 6: ADDITIONAL REMOTE AND APPLICATION SERVICES
+
+Affected Ports:
+1099/tcp - Java RMI Registry
+5900/tcp - VNC
+6000/tcp - X11
+8009/tcp - AJP13
+8180/tcp - Unknown
+
+Observation:
+Additional remote-access and application-related
+services were identified.
+
+Risk:
+Unnecessary or improperly configured services
+may introduce security weaknesses.
+
+Severity: Medium (Provisional)
+
+Recommendation:
+Identify each service and verify its configuration.
+Restrict remote access.
+Disable unnecessary services.
+Use appropriate authentication and access controls.
+
+
+ASSESSMENT LIMITATION:
+
+Service exposure does not independently confirm
+a vulnerability or successful unauthorized access.
+Further configuration review is required.

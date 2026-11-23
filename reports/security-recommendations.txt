@@ -6,14 +6,17 @@ Environment: Metasploitable 2
 1. LEGACY REMOTE ACCESS
 - Disable unnecessary Telnet, rexec, rlogin and rsh services.
 - Use SSH for secure remote administration.
+- Enforce strong authentication.
 
 2. FTP SERVICE
-- Replace traditional FTP with SFTP or another secure transfer method.
+- Replace traditional FTP with SFTP or secure FTPS.
 - Use encrypted communication.
+- Verify software versions and apply security updates.
 
 3. WEB SERVER
 - Upgrade outdated Apache software to a supported version.
 - Apply security updates regularly.
+- Disable unnecessary modules.
 - Review web server configuration.
 
 4. DATABASE SERVICES
@@ -22,13 +25,33 @@ Environment: Metasploitable 2
 - Apply database security updates.
 - Review user permissions.
 
-5. GENERAL SECURITY
-- Disable unnecessary services.
-- Apply regular security patches.
+5. SMB AND NFS SERVICES
+- Restrict file-sharing access to trusted systems.
+- Review SMB and NFS permissions.
+- Disable unnecessary file-sharing services.
+- Apply security updates.
+
+6. REMOTE AND APPLICATION SERVICES
+- Restrict VNC and X11 access.
+- Review Java RMI Registry configuration.
+- Review AJP13 access restrictions.
+- Identify the unknown service on port 8180.
+- Disable unnecessary remote-access services.
+
+7. NETWORK SECURITY
 - Configure firewall rules.
+- Apply network segmentation.
+- Monitor exposed network services.
+- Restrict access to authorized hosts.
+
+8. GENERAL SECURITY
+- Apply regular security patches.
 - Monitor system logs.
 - Perform periodic security assessments.
+- Maintain an updated security inventory.
 
 NOTE:
-These recommendations are based on observed services.
-Configuration-level weaknesses have not been independently verified.
+These recommendations are based on observed
+network services and detected software versions.
+Configuration-level weaknesses have not been
+independently verified.
