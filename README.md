@@ -80,6 +80,7 @@ Ethical-Hacking-Project/
 │   └── evidence-index.txt
 │
 ├── reports/
+    ├── Metasploitable2_Executive_Summary.pdf
 │   ├── final-assessment-report.md
 │   ├── risk-assessment.txt
 │   ├── security-findings.txt
@@ -99,6 +100,7 @@ The detailed reports are available below:
 - [Risk Assessment](reports/risk-assessment.txt)
 - [Security Recommendations](reports/security-recommendations.txt)
 - [Service Analysis](reports/service-analysis.txt)
+- [Executive Summary PDF](reports/Metasploitable2_Executive_Summary.pdf)
 
 ## Evidence Collection
 
